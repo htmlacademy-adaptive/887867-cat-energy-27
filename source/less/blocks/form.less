@@ -7,7 +7,7 @@
 .form__fieldset {
   padding: 0 20px;
   border: none;
-  border-bottom: 1px solid #D9D9D9;
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .form__item {
@@ -25,6 +25,14 @@
   font-size: 16px;
   min-width: max-content;
   color: #444444;
+
+  &--black {
+    color: #222222;
+  }
+
+  &--Additionally {
+    color: #000000;
+  }
 }
 
 .form__input {
@@ -34,7 +42,7 @@
   .text-oswald();
   font-size: 16px;
   color: #444444;
-  width: -webkit-fill-available;
+  width: -webkit-fill-available;/* stylelint-disable-line */
 }
 
 .form__legend {
@@ -47,35 +55,20 @@
 .form__button {
   width: 280px;
   height: 40px;
-  background: #68B738;
+  background: #68b738;
   .text-oswald();
   font-size: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   margin-bottom: 28px;
 }
 
-.form__input--comment {
-width: 100%;
-min-height: 150px;
-margin-bottom: 23px;
-margin-top: 38px;
-}
-
-.form__label--Additionally {
-  color: #000000;
-}
-
 .form__desc {
-  font-family: "lato";
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 16px;
-text-align: center;
-color: #000000;
-}
-
-.form__label--black {
-  color: #222222;
+  font-family: "lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #000000;
 }
